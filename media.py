@@ -7,7 +7,7 @@ while dato.isdigit() :
     
     numero = int(dato)
     somma  = int(numero + somma)
-    dato   = input()
+    dato   = input("Prossimo numero: ")
     contatore  += 1
 
 print("La media dei numeri scritti è", somma/contatore)
