@@ -8,8 +8,8 @@ class Message :
         self._corpoMessaggio.append(rigaTesto)
     
     def toString (self) :
-        x = ' '.join(self._corpoMessaggio)
-        print (self._mittente, "scrive a", self._destinatario, "'" ,x,"'")
+        x = self._mittente + " scrive a " + self._destinatario + " '" + ' '.join(self._corpoMessaggio) + "'"
+        print(x)
     
     
 noStampa = True
