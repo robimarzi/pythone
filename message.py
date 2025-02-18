@@ -19,7 +19,7 @@ email = Message (x, y)
 while noStampa : 
     msg = input("Dimmi il messaggio:")
     email.append(msg)
-    print ("Premi invio se vuoi stampare il messaggio, digita qualsiasi cosa per stampare il messaggio")
+    print ("Premi invio se vuoi stampare il messaggio, digita qualsiasi cosa per aggiungere altro al messaggio messaggio")
     x = ""
     x = input()
     if x == "" : 
