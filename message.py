@@ -9,7 +9,7 @@ class Message :
     
     def toString (self) :
         x = ' '.join(self._corpoMessaggio)
-        print (self._mittente, "scrive a", self._destinatario, x)
+        print (self._mittente, "scrive a", self._destinatario, "'" ,x,"'")
     
     
 noStampa = True
