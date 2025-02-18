@@ -3,15 +3,13 @@ class Message :
         self._mittente = mittente
         self._destinatario = destinatario
         self._corpoMessaggio = []
-        self._messaggio = ""
+
     def append (self, rigaTesto) :
         self._corpoMessaggio.append(rigaTesto)
     
     def toString (self) :
-        self._messaggio = self._mittente + " scrive a " + self._destinatario + " '" + ' '.join(self._corpoMessaggio) + "'"
-        
-    def stampa(self):
-        print(self._messaggio)
+        x = self._mittente + " scrive a " + self._destinatario + " '" + ' '.join(self._corpoMessaggio) + "'"
+        print (x)
     
     
 noStampa = True
@@ -28,4 +26,6 @@ while noStampa :
         noStampa = False
 
 email.toString()
-email.stampa()
+
+
+        
