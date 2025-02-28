@@ -11,13 +11,14 @@ all_links = [a["href"] for a in prova.find_all("a", href=True)]
 
 df = pd.DataFrame(columns=["Link"])
 lista = []
-for valididamento in all_links:                                 
-   if valididamento.startswith("http"):
-        a = urllib.request.urljoin(link, valididamento)         
+for validamento in all_links:                                 
+   if validamento.startswith("http"):
+        print (validamento)
+        a = urllib.request.urljoin(link, validamento)         
         try: 
             a = requests.get(a)
             if not a.status_code == 200:                       
-                lista.append(valididamento)
+                lista.append(validamento)
         except:
                 pass
 for i in lista:
